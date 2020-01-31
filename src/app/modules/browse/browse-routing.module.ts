@@ -5,6 +5,7 @@ import { BrowseComponent } from './pages/browse.component';
 import { SearchComponent } from '../search/pages/search.component';
 import { NativeScriptCommonModule } from 'nativescript-angular/common';
 
+/*
 const browseChildrens: Routes = [
   { path: "", redirectTo: "browse" },
   { path: "browse", component: BrowseComponent },
@@ -19,5 +20,5 @@ const browseChildrens: Routes = [
 
   exports: [NativeScriptRouterModule]
 })
-
+*/
 export class BrowseRoutingModule { }

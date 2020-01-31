@@ -6,9 +6,8 @@ import { BottomnavComponent } from './pages/bottomnav.component';
 const routes: Routes = [
   //{ path: "", redirectTo: "bottomnav", pathMatch: "full" },
   { path: "bottomnav", redirectTo: "/(browse:browse//search:search)", pathMatch: "full" },
-  
-  { path: "browse", loadChildren: '../browse/browse.module#BrowseModule' },    
-  { path: "search", loadChildren: '../search/search.module#SearchModule' }, 
+  { path: "browse", loadChildren: () => import('../browse/browse.module').then(m => m.BrowseModule)},
+  { path: "search", loadChildren: () => import('../search/search.module').then(m => m.SearchModule)},
 ];
 
 @NgModule({
