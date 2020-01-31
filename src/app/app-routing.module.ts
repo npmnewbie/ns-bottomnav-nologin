@@ -4,9 +4,11 @@ import { Routes } from "@angular/router";
 
 import { ItemsComponent } from "./item/items.component";
 import { ItemDetailComponent } from "./item/item-detail.component";
+import { BottomnavComponent } from "./modules/bottomnav/pages/bottomnav.component";
 
 const routes: Routes = [
-    { path: "", redirectTo: "/items", pathMatch: "full" },
+    { path: "", redirectTo: "/bottomnav", pathMatch: "full" },
+    { path: "bottomnav", component: BottomnavComponent },
     { path: "items", component: ItemsComponent },
     { path: "item/:id", component: ItemDetailComponent }
 ];
