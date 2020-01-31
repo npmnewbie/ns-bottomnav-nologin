@@ -6,6 +6,8 @@ import { AppComponent } from "./app.component";
 import { ItemsComponent } from "./item/items.component";
 import { ItemDetailComponent } from "./item/item-detail.component";
 import { BottomnavComponent } from "./modules/bottomnav/pages/bottomnav.component";
+import { SearchComponent } from "./modules/search/pages/search.component";
+import { BrowseComponent } from "./modules/browse/pages/browse.component";
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
@@ -23,9 +25,8 @@ import { BottomnavComponent } from "./modules/bottomnav/pages/bottomnav.componen
     ],
     declarations: [
         AppComponent,
-        ItemsComponent,
-        BottomnavComponent,
-        ItemDetailComponent
+        //ItemsComponent,
+        //ItemDetailComponent
     ],
     providers: [],
     schemas: [

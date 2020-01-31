@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterExtensions } from 'nativescript-angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'ns-bottomnav',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BottomnavComponent implements OnInit {
 
-  constructor() { }
+  constructor(private routerExtension: RouterExtensions,
+    private activeRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    console.log("ngOnInit BottomnavComponent");
+    /*
+    const outlets = {};
+    outlets["search"] = ["search"];
+    outlets["browse"] = ["browse"];
+
+    this.routerExtension.navigate([{ outlets, relativeTo: this.activeRoute }]);
+    */
   }
 
 }
