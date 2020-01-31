@@ -13,14 +13,7 @@ export class BottomnavComponent implements OnInit {
     private activeRoute: ActivatedRoute) { }
 
   ngOnInit() {
-    console.log("ngOnInit BottomnavComponent");
-    /*
-    const outlets = {};
-    outlets["search"] = ["search"];
-    outlets["browse"] = ["browse"];
-
-    this.routerExtension.navigate([{ outlets, relativeTo: this.activeRoute }]);
-    */
+    
   }
 
 }

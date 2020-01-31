@@ -3,11 +3,7 @@ import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { ItemsComponent } from "./item/items.component";
-import { ItemDetailComponent } from "./item/item-detail.component";
-import { BottomnavComponent } from "./modules/bottomnav/pages/bottomnav.component";
-import { SearchComponent } from "./modules/search/pages/search.component";
-import { BrowseComponent } from "./modules/browse/pages/browse.component";
+import { BottomnavModule } from "./modules/bottomnav/bottomnav.module";
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
@@ -21,12 +17,11 @@ import { BrowseComponent } from "./modules/browse/pages/browse.component";
     ],
     imports: [
         NativeScriptModule,
+        BottomnavModule,
         AppRoutingModule
     ],
     declarations: [
         AppComponent,
-        //ItemsComponent,
-        //ItemDetailComponent
     ],
     providers: [],
     schemas: [
