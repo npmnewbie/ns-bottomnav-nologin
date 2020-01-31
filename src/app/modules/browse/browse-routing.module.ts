@@ -5,20 +5,17 @@ import { BrowseComponent } from './pages/browse.component';
 import { SearchComponent } from '../search/pages/search.component';
 import { NativeScriptCommonModule } from 'nativescript-angular/common';
 
-/*
 const browseChildrens: Routes = [
-  { path: "", redirectTo: "browse" },
-  { path: "browse", component: BrowseComponent },
+  { path: "", component: BrowseComponent, outlet: "browse" },
 ];
 
 @NgModule({
   imports: [
-    NativeScriptCommonModule,
     NativeScriptRouterModule,
     NativeScriptRouterModule.forChild(browseChildrens)
   ],
 
   exports: [NativeScriptRouterModule]
 })
-*/
+
 export class BrowseRoutingModule { }
